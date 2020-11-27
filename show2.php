@@ -57,7 +57,7 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href="form2.html" class="btn btn-primary">เพิ่ม</a>
+<a href="edit.php" class="btn btn-primary">แก้ไข</a>
 
 </div>
 </body>
