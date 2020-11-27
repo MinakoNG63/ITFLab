@@ -31,22 +31,24 @@ if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM abc');
+$res = mysqli_query($conn, 'SELECT * FROM finallab');
 ?>
 <table width="600" border="1">
   <tr>
-    <th> <div align="center">A</div></th>
-    <th> <div align="center">B</div></th>
-    <th> <div align="center">C</div></th>
+    <th> <div align="center">name</div></th>
+    <th> <div align="center">weight</div></th>
+    <th> <div align="center">height</div></th>
+    <th> <div align="center">bmi</div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['A'];?></div></td>
-    <td><?php echo $Result['B'];?></td>
-    <td><?php echo $Result['C'];?></td>
+    <td><?php echo $Result['name'];?></div></td>
+    <td><?php echo $Result['weight'];?></td>
+    <td><?php echo $Result['height'];?></td>
+    <td><?php echo $Result['bmi'];?></td>
   </tr>
 <?php
 }
@@ -55,7 +57,7 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href="form.html" class="btn btn-primary">เพิ่ม</a>
+<a href="form2.html" class="btn btn-primary">เพิ่ม</a>
 
 </div>
 </body>
