@@ -1,17 +1,3 @@
-<html>
-<head>
-<style>
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 </style>
 <title>ITF Lab</title>
@@ -57,7 +43,7 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href="edit.php" class="btn btn-primary">แก้ไข</a>
+<a href="form2.html" class="btn btn-primary">เพิ่ม</a>
 
 </div>
 </body>
