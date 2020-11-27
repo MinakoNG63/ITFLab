@@ -35,11 +35,11 @@ $res = mysqli_query($conn, 'SELECT * FROM finallab');
 ?>
 <table width="600" border="1">
   <tr>
-    <th> <div align="center">name</div></th>
-    <th> <div align="center">weight</div></th>
-    <th> <div align="center">height</div></th>
+    <th> <div align="center">ชื่อ</div></th>
+    <th> <div align="center">น้ำหนัก</div></th>
+    <th> <div align="center">ส่วนสูง</div></th>
     <th> <div align="center">bmi</div></th>
-    <th> <div align="center">update </div></th>
+    <th> <div align="center">การจัดการ </div></th>
 
   </tr>
 <?php
@@ -51,7 +51,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['weight'];?></td>
     <td><?php echo $Result['height'];?></td>
     <td><?php echo $Result['bmi'];?></td>
-    <td><a href="edit.php?Id=<?= $Result["Id"]; ?>" class="button">Edit</a></td>
+    <td><a href="edit.php?Id=<?= $Result["Id"]; ?>" class="button">update</a></td>
   </tr>
 <?php
 }
