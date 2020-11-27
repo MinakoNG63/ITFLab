@@ -51,7 +51,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['weight'];?></td>
     <td><?php echo $Result['height'];?></td>
     <td><?php echo $Result['bmi'];?></td>
-    <td><a href="edit.php?ID=<?= $Result["ID"]; ?>" class="button">Edit</a></td>
+    <td><a href="edit.php?Id=<?= $Result["Id"]; ?>" class="button">Edit</a></td>
   </tr>
 <?php
 }
