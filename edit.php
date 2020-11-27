@@ -14,7 +14,7 @@ if(isset($_GET['submit'])){
  $weight=$_GET['weight'];
  $height=$_GET['height'];
 
- $sql = "UPDATE finallab SET weight='$weight', height='$height' WHERE ID='$ID'";
+ $sql = "UPDATE finallab SET weight='$weight', height='$height' WHERE Id='$Id'";
 
  if(mysqli_query($conn, $sql)){
   header("location:show2.php");
