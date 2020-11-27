@@ -1,3 +1,17 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 </style>
 <title>ITF Lab</title>
@@ -25,6 +39,8 @@ $res = mysqli_query($conn, 'SELECT * FROM finallab');
     <th> <div align="center">weight</div></th>
     <th> <div align="center">height</div></th>
     <th> <div align="center">bmi</div></th>
+    <th> <div align="center">Edit </div></th>
+
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -35,6 +51,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['weight'];?></td>
     <td><?php echo $Result['height'];?></td>
     <td><?php echo $Result['bmi'];?></td>
+    <td><a href="edit.php?ID=<?= $Result["ID"]; ?>" class="button">Edit</a></td>
   </tr>
 <?php
 }
