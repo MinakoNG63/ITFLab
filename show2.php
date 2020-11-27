@@ -39,7 +39,7 @@ $res = mysqli_query($conn, 'SELECT * FROM finallab');
     <th> <div align="center">weight</div></th>
     <th> <div align="center">height</div></th>
     <th> <div align="center">bmi</div></th>
-    <th> <div align="center">Edit </div></th>
+    <th> <div align="center">update </div></th>
 
   </tr>
 <?php
