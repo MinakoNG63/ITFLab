@@ -9,10 +9,10 @@ $ID = $_GET['Id'];
 $row = mysqli_query($conn ,"Select * From finallab where Id = $Id");
 $result = mysqli_fetch_assoc($row);
 
-if(isset($_GET['submit'])){
+if(isset($_POST['submit'])){
  $Id = $_GET['Id'];
- $weight=$_GET['weight'];
- $height=$_GET['height'];
+ $weight=$_POST['weight'];
+ $height=$_POST['height'];
 
  $sql = "UPDATE finallab SET weight='$weight', height='$height' WHERE Id='$Id'";
 
